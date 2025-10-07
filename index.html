@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Café Andino — Donde el aroma del café se mezcla con la esencia del Cusco</title>
+  <meta name="description" content="Café Andino - Café andino 100% orgánico, tostado en casa y preparado con recetas inspiradas en la tradición andina.">
+  <link rel="icon" href="data:,"><style>
+  /* ---------- RESET & BASE ---------- */
+  :root{
+    --bg:#f6f3ef; /* light cream */
+    --wood:#5a3a2a; /* dark wood */
+    --coffee:#7a4b2e; /* medium coffee */
+    --accent:#c99a6b; /* warm accent */
+    --muted:#9b7b63;
+    --white:#fff;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0;font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;background:var(--bg);color:#2b2b2b}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;height:auto;display:block}
+
+  /* ---------- LAYOUT ---------- */
+  .container{max-width:1100px;margin:0 auto;padding:24px}
+  header{position:sticky;top:0;background:linear-gradient(180deg, rgba(246,243,239,0.95), rgba(246,243,239,0.8));backdrop-filter: blur(4px);z-index:40;border-bottom:1px solid rgba(90,58,42,0.06)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+  .brand{display:flex;align-items:center;gap:12px}
+  .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--wood),var(--coffee));display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:700;box-shadow:0 6px 16px rgba(90,58,42,0.12)}
+  nav ul{display:flex;gap:18px;align-items:center;list-style:none;margin:0;padding:0}
+  .btn-primary{background:var(--wood);color:var(--white);padding:10px 14px;border-radius:10px;box-shadow:0 6px 14px rgba(90,58,42,0.12)}
+
+  /* ---------- HERO ---------- */
+  .hero{display:grid;grid-template-columns:1fr;gap:20px;align-items:center;padding:36px 0}
+  .hero-inner{display:flex;flex-direction:column;gap:18px}
+  .hero h1{margin:0;font-size:2rem;line-height:1.05;color:var(--wood)}
+  .hero p.lead{margin:0;color:var(--muted);max-width:60ch}
+  .hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero-visual{border-radius:14px;overflow:hidden;box-shadow:0 18px 60px rgba(90,58,42,0.15)}
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:36px 0;border-bottom:1px solid rgba(90,58,42,0.04)}
+  h2.section-title{margin:0 0 18px 0;color:var(--wood);font-size:1.3rem}
+
+  /* Nosotros */
+  .nosotros{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center}
+  .card{background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.9));padding:18px;border-radius:12px}
+
+  /* Menu */
+  .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .menu-item{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.85));border:1px solid rgba(90,58,42,0.04)}
+  .price{font-weight:700;color:var(--wood)}
+
+  /* Reviews */
+  .reviews-list{display:grid;gap:12px}
+  .review{padding:12px;border-radius:10px;background:rgba(250,245,242,0.9);border:1px solid rgba(90,58,42,0.03)}
+  .stars{color:var(--accent);font-weight:700}
+
+  /* Contact */
+  .form-grid{display:grid;grid-template-columns:1fr 360px;gap:20px}
+  form label{display:block;font-size:0.9rem;margin-bottom:6px}
+  input[type="text"],input[type="email"],textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(90,58,42,0.08);background:#fff}
+  textarea{min-height:120px;resize:vertical}
+  .muted{color:var(--muted);font-size:0.95rem}
+
+  /* Footer */
+  footer{padding:20px 0;text-align:center;color:var(--muted);font-size:0.9rem}
+
+  /* Responsive */
+  @media (max-width:900px){
+    .nosotros{grid-template-columns:1fr}
+    .form-grid{grid-template-columns:1fr}
+    nav ul{display:none}
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">CA</div>
+        <div>
+          <div style="font-weight:700;color:var(--wood)">Café Andino</div>
+          <div style="font-size:12px;color:var(--muted)">Esencia del Cusco</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#reseñas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a class="btn-primary" href="#contacto">Reservar</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="hero-inner">
+        <h1>Donde el aroma del café se mezcla con la esencia del Cusco.</h1>
+        <p class="lead">Disfruta café andino 100 % orgánico, tostado en casa y preparado con recetas inspiradas en la tradición andina.</p>
+        <div class="hero-cta">
+          <a class="btn-primary" href="#menu">Ver Menú</a>
+          <a href="#nosotros" style="padding:10px 14px;border-radius:10px;border:1px solid rgba(90,58,42,0.06);">Conócenos</a>
+        </div>
+      </div>
+      <div class="hero-visual" style="margin-top:8px">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=5e3b8b3b1c3e9f8c2a1c6e9a8c3f7d56" alt="Taza de café andino sobre madera">
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros">
+      <h2 class="section-title">Nosotros</h2>
+      <div class="nosotros">
+        <div class="card">
+          <p>Somos <strong>Café Andino Cusco</strong>, una cafetería inspirada en la esencia andina y el espíritu del Cusco. Celebramos el café orgánico cultivado por familias del Valle Sagrado, donde cada grano refleja tradición, esfuerzo y amor por la tierra. Nuestro espacio combina aroma, cultura y hospitalidad para ofrecer una experiencia única. Creemos en el comercio justo y en compartir momentos auténticos con cada visitante. Aquí, el café une corazones al ritmo de los Andes y conserva viva la magia de nuestra tierra.</p>
+        </div>
+        <div>
+          <img alt="Tostado de café" src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=9c7b2f1b3a6f9d4b5d8a1c2b3e4f6789" style="border-radius:12px;box-shadow:0 18px 50px rgba(90,58,42,0.08)">
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu">
+      <h2 class="section-title">Menú</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div style="font-weight:700">ESPRESSO ANDINO</div>
+          <div class="muted">Intenso y aromático</div>
+          <div class="price">S/ 6.00</div>
+        </div>
+        <div class="menu-item">
+          <div style="font-weight:700">AMERICAN ARTESANAL</div>
+          <div class="muted">Suave y balanceado</div>
+          <div class="price">S/ 7.00</div>
+        </div>
+        <div class="menu-item">
+          <div style="font-weight:700">Cappuccino con arte latte</div>
+          <div class="muted">Espuma sedosa y diseño</div>
+          <div class="price">S/ 9.00</div>
+        </div>
+        <div class="menu-item">
+          <div style="font-weight:700">Mocaccino con cacao del Cusco</div>
+          <div class="muted">Cacao local</div>
+          <div class="price">S/ 10.00</div>
+        </div>
+        <div class="menu-item">
+          <div style="font-weight:700">CHOCOLATE CALIENTE ANDINO</div>
+          <div class="muted">Cacao tradicional</div>
+          <div class="price">S/ 8.00</div>
+        </div>
+        <div class="menu-item">
+          <div style="font-weight:700">Café pasado tradicional</div>
+          <div class="muted">Método tradicional</div>
+          <div class="price">S/ 6.50</div>
+        </div>
+        <div class="menu-item">
+          <div style="font-weight:700">TÉ DE MANZANILLA ANDINO</div>
+          <div class="muted">Relajante</div>
+          <div class="price">S/ 5.00</div>
+        </div>
+        <div class="menu-item">
+          <div style="font-weight:700">INFUSIÓN DE ANÍS</div>
+          <div class="muted">Digestiva</div>
+          <div class="price">S/ 5.00</div>
+        </div>
+        <div class="menu-item">
+          <div style="font-weight:700">INFUSIÓN DE MENTA</div>
+          <div class="muted">Fresca</div>
+          <div class="price">S/ 5.00</div>
+        </div>
+        <div class="menu-item">
+          <div style="font-weight:700">Mate de kión y limón</div>
+          <div class="muted">Calentito y aromático</div>
+          <div class="price">S/ 6.50</div>
+        </div>
+        <div class="menu-item">
+          <div style="font-weight:700">Cheesecake de arándanos</div>
+          <div class="muted">Postre casero</div>
+          <div class="price">S/ 12.00</div>
+        </div>
+        <div class="menu-item">
+          <div style="font-weight:700">Brownie de cacao cusqueño</div>
+          <div class="muted">Chocolate intenso</div>
+          <div class="price">S/ 9.00</div>
+        </div>
+        <div class="menu-item">
+          <div style="font-weight:700">MUFFINS DE PLÁTANO</div>
+          <div class="muted">Caseros</div>
+          <div class="price">S/ 6.00</div>
+        </div>
+        <div class="menu-item">
+          <div style="font-weight:700">ALFAJORES DE KIWICHA</div>
+          <div class="muted">Dulces tradicionales</div>
+          <div class="price">S/ 4.50</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEÑAS -->
+    <section id="reseñas">
+      <h2 class="section-title">Reseñas</h2>
+      <div class="card">
+        <div id="reviews" class="reviews-list">
+          <!-- Reviews injected by JS -->
+        </div>
+        <hr style="margin:16px 0;border:none;border-top:1px dashed rgba(90,58,42,0.06)">
+        <form id="reviewForm">
+          <label for="r-name">Nombre</label>
+          <input id="r-name" type="text" placeholder="Tu nombre" required>
+          <label for="r-rating">Puntuación</label>
+          <select id="r-rating">
+            <option value="5">★★★★★ 5</option>
+            <option value="4">★★★★ 4</option>
+            <option value="3">★★★ 3</option>
+            <option value="2">★★ 2</option>
+            <option value="1">★ 1</option>
+          </select>
+          <label for="r-text">Reseña</label>
+          <textarea id="r-text" placeholder="Comparte tu experiencia" required></textarea>
+          <div style="margin-top:12px"><button type="submit" class="btn-primary">Enviar reseña</button></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- CONTACTO / RESERVAS -->
+    <section id="contacto">
+      <h2 class="section-title">Contacto / Reservas</h2>
+      <div class="form-grid">
+        <div>
+          <p class="muted">Teléfono: <a href="tel:+51934258742">934258742</a></p>
+          <p class="muted">Email: <a href="mailto:cafeandinocusco@gmail.com">cafeandinocusco@gmail.com</a></p>
+          <p class="muted">Dirección: Cusco, Valle Sagrado (indicar dirección exacta)</p>
+
+          <div style="margin-top:18px" class="card">
+            <h3 style="margin-top:0">Haz una reserva</h3>
+            <form id="reserveForm">
+              <label for="res-name">Nombre</label>
+              <input id="res-name" type="text" required>
+              <label for="res-phone">Teléfono</label>
+              <input id="res-phone" type="text" required>
+              <label for="res-date">Fecha y hora</label>
+              <input id="res-date" type="datetime-local" required>
+              <label for="res-people">Personas</label>
+              <select id="res-people">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6+</option>
+              </select>
+              <div style="margin-top:12px"><button type="submit" class="btn-primary">Reservar</button></div>
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0">Envíanos un mensaje</h3>
+          <form id="contactForm">
+            <label for="c-name">Nombre</label>
+            <input id="c-name" type="text" required>
+            <label for="c-email">Correo</label>
+            <input id="c-email" type="email" required>
+            <label for="c-message">Mensaje</label>
+            <textarea id="c-message" required></textarea>
+            <div style="margin-top:12px"><button type="submit" class="btn-primary">Enviar mensaje</button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="margin-bottom:8px">Síguenos en Instagram y Facebook — @cafeandinocusco</div>
+      <div>© Café Andino 2025 · Comercio justo · Café orgánico del Valle Sagrado</div>
+    </div>
+  </footer>
+
+  <script>
+  // Simple client-side storage for reviews & reservations
+  const qs = s => document.querySelector(s);
+  const qsa = s => document.querySelectorAll(s);
+
+  // Utilities
+  function loadFromStorage(key, defaultVal){
+    try{ const v = localStorage.getItem(key); return v? JSON.parse(v): defaultVal }catch(e){return defaultVal}
+  }
+  function saveToStorage(key, val){ localStorage.setItem(key, JSON.stringify(val)) }
+
+  /* ---------- REVIEWS ---------- */
+  const reviewsEl = qs('#reviews');
+  let reviews = loadFromStorage('cafe_andino_reviews', [
+    {name:'Ana',rating:5,text:'Un lugar mágico, el café tiene un sabor único y el servicio es excelente.'},
+    {name:'Luis',rating:5,text:'El brownie de cacao cusqueño es una delicia. Volveré seguro!'}
+  ]);
+
+  function renderReviews(){
+    reviewsEl.innerHTML = '';
+    if(!reviews.length) reviewsEl.innerHTML = '<div class="muted">Aún no hay reseñas. ¡Sé el primero!</div>';
+    reviews.forEach(r =>{
+      const div = document.createElement('div'); div.className='review';
+      div.innerHTML = `<div style="display:flex;justify-content:space-between;align-items:center"><strong>${escapeHtml(r.name)}</strong><div class="stars">${'★'.repeat(r.rating)}</div></div><p style="margin:8px 0 0">${escapeHtml(r.text)}</p>`;
+      reviewsEl.appendChild(div);
+    })
+  }
+
+  function escapeHtml(str){ return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\"/g,'&quot;') }
+
+  renderReviews();
+
+  qs('#reviewForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    const name = qs('#r-name').value.trim();
+    const rating = parseInt(qs('#r-rating').value);
+    const text = qs('#r-text').value.trim();
+    if(!name||!text) return alert('Por favor completa nombre y reseña.');
+    const newReview = {name,rating,text};
+    reviews.unshift(newReview);
+    if(reviews.length>50) reviews = reviews.slice(0,50);
+    saveToStorage('cafe_andino_reviews',reviews);
+    renderReviews();
+    qs('#reviewForm').reset();
+  })
+
+  /* ---------- RESERVAS ---------- */
+  let reservations = loadFromStorage('cafe_andino_reservations', []);
+  qs('#reserveForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    const name = qs('#res-name').value.trim();
+    const phone = qs('#res-phone').value.trim();
+    const datetime = qs('#res-date').value;
+    const people = qs('#res-people').value;
+    if(!name||!phone||!datetime) return alert('Completa los datos de reserva.');
+    const res = {id:Date.now(),name,phone,datetime,people};
+    reservations.push(res);
+    saveToStorage('cafe_andino_reservations',reservations);
+    alert('Reserva guardada localmente. Recibirás confirmación por teléfono o email cuando lo gestionemos.');
+    qs('#reserveForm').reset();
+  })
+
+  /* ---------- CONTACT FORM ---------- */
+  qs('#contactForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    const name = qs('#c-name').value.trim();
+    const email = qs('#c-email').value.trim();
+    const message = qs('#c-message').value.trim();
+    if(!name||!email||!message) return alert('Por favor completa todos los campos.');
+    // By default we open the user's mail client using mailto as a quick free option
+    const subject = encodeURIComponent('Contacto desde web - Café Andino');
+    const body = encodeURIComponent(`Nombre: ${name}%0AEmail: ${email}%0A%0A${message}`);
+    window.location.href = `mailto:cafeandinocusco@gmail.com?subject=${subject}&body=${body}`;
+  })
+
+  /* ---------- SMALL NAV HIGHLIGHT (optional) ---------- */
+  document.addEventListener('scroll', ()=>{
+    const fromTop = window.scrollY + 90;
+    const sections = ['inicio','nosotros','menu','reseñas','contacto'];
+    // (no heavy computation, simple highlight could be added)
+  })
+
+  </script>
+</body>
+</html>
